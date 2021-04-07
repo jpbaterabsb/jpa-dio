@@ -1,6 +1,6 @@
 # Pure-JPA - Digital Innovation One
 
-The goal of this project is to remember JDBC implementation
+The goal of this project is to learn core conceps of JPA.
 ## Getting Started
 
 1. Clone this project
