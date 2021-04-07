@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+	version="2.2">
+	<persistence-unit name="Clientes-PU">
+		<properties>
+			<!-- Url de conexao do banco de dados -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/db_cadastro_cliente" />
+			<!--Usuario de conexao do banco de dados-->
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<!--Senha do usuario de conexao do banco de dados-->
+			<property name="javax.persistence.jdbc.password" value="root" />
+			<!--Driver do SGBD para conectar ao banco-->
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+			<!--Dialeto é responsavel por traduzir o mapeamento do hibernate para a linguagem SQL nativa do SGBD-->
+				<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+			<!--Cria o banco de dados e encerra no final da sesao-->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<!--Imprimir as consultas no log-->
+			<property name="hibernate.show_sql" value="true" />
+			<!--Formatar a impressão das consultas no Log-->
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.connection.autocommit " value="true" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
